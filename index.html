@@ -2,7 +2,9 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Ejemplo de Email</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>Cristian Mamaní - Portafolio</title>
     <link rel="stylesheet" href="styles/index.css">
     <script src="https://smtpjs.com/v3/smtp.js"> </script> <!-- para enviar -->
 
@@ -10,45 +12,67 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- reCaptcha -->
+    <!-- <script src="https://www.google.com/recaptcha/api.js"></script>
+      <script>
+        function onSubmit(token) {
+            document.getElementById("demo-form").submit();
+        }
+    </script> -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <body>
-    <header>
-        <h1>Bienvenido a mi sitio web</h1>
-    </header>
+        <div class="center" style="padding: 2lvw;">
+        <header>
+            <h1>Bienvenido a mi sitio web</h1>
+            <h2>Esto será un portafolio, muy pronto</h2>
+        </header>
 
-    <main>
-        <p>Éste es un párrafo.</p>
-        <form action="" method="post">
-            <label>Tu equipo favorito:</label> <br/>
-            <select>
-                <option>Boca Juniors</option>
-                <option>Tigre</option>
-                <option>Belgrano</option>
-                <option>Flamengo</option>
-                <option>Riber</option>
-            </select>
-            <br>
-            <br>
-            <label>Equipos que descendieron:</label> <br/>
-            <input type="checkbox"> Boca<br>
-            <input type="checkbox"> San Lorenzo<br>
-            <input type="checkbox"> Racing<br>
-            <input type="checkbox"> Independiente<br>
-            <input type="checkbox"> Riber<br>
-            <br>
-            <br>
-            <label>Categoría:</label> <br/>
-            <input type="radio">Grande
-            <input type="radio">Chico
-        </form>
-        <video width="320" height="240" controls>
-            <source src="slipknot_son_cosas_del_amor_360p.mp4" type="video/mp4">
-            Su navegador no soporta la etiqueta video
-        </video>
-    </main>
+        <main>
+            <p>Éste es un párrafo.</p>
+            <form id="demo-form" action="" method="post">
+                <label>Tu equipo favorito:</label> <br/>
+                <select>
+                    <option>Boca Juniors</option>
+                    <option>Tigre</option>
+                    <option>Belgrano</option>
+                    <option>Flamengo</option>
+                    <option>Riber</option>
+                </select>
+                <br>
+                <br>
+                <label>Equipos que descendieron:</label> <br/>
+                <input type="checkbox"> Boca<br>
+                <input type="checkbox"> San Lorenzo<br>
+                <input type="checkbox"> Racing<br>
+                <input type="checkbox"> Independiente<br>
+                <input type="checkbox"> Riber<br>
+                <br>
+                <br>
+                <label>Categoría:</label> <br/>
+                <input type="radio">Grande
+                <input type="radio">Chico
+                <!-- reCaptcha v3 -->
+                <!--  
+                <button class="g-recaptcha" 
+                    data-sitekey="6LeW6rUrAAAAAHRrRXJE_0GielgPWiRVFcZHGeJD"
+                    data-callback='onSubmit' 
+                    data-action='submit'>Submit
+                </button> -->
+                <!-- reCaptcha v2 -->
+                <div class="g-recaptcha" data-sitekey="6LeW6rUrAAAAAHRrRXJE_0GielgPWiRVFcZHGeJD" data-action="LOGIN"></div>
+                <br/>
+                
+            </form>
+            <video width="320" height="240" controls>
+                <source src="slipknot_son_cosas_del_amor_360p.mp4" type="video/mp4">
+                Su navegador no soporta la etiqueta video
+            </video>
+        </main>
 
-    <footer>
-        <p>Copyright 2025. Todos los derechos reservados xd</p>
-    </footer>
+        <footer>
+            <p>Copyright 2025. Todos los derechos reservados xd</p>
+        </footer>
+    </div>
 </body>
 </html>

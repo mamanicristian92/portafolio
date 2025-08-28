@@ -1,5 +1,20 @@
 body{
     font-family: 'Open Sans', sans-serif; /* Reemplaza 'Open Sans' con el nombre de tu fuente */
-    background-color: #1D1D24;
+    /* background-color: #1D1D24; */
     color:#FFF0F0;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    background: #012238;
+    background: linear-gradient(90deg,rgba(1, 34, 56, 1) 0%, rgba(1, 97, 97, 1) 100%);
+}
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.center {
+  margin: auto;
+  width: 30%;
+  border: solid 1px;
 }
