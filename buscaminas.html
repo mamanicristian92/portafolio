@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>Buscaminas</title>
+    <link rel="stylesheet" href="styles/index.css">
+    <script src="https://smtpjs.com/v3/smtp.js"> </script> <!-- para enviar correo -->
+
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="/images/favicon/favicon_io/favicon.ico">
+
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+        <div style="padding: 2lvw; margin-top: 1lvw; background-color: #0B5661;">
+        <header>
+            <h1>Buscaminas</h1>
+            <h2>El juego del buscaminas, hecho en HTML, CSS y JavaScript</h2>
+        </header>
+
+        <main>
+            <p>En construcción...</p>
+            <br>
+            <table>
+                <tr>
+                    <td class="celda">
+                        <button id="b00"
+                        class="boton-celda" onclick="" style="background: lightgray;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M2.76 3.061a.5.5 0 0 1 .679.2l1.283 2.352A8.9 8.9 0 0 1 8 5a8.9 8.9 0 0 1 3.278.613l1.283-2.352a.5.5 0 1 1 .878.478l-1.252 2.295C14.475 7.266 16 9.477 16 12H0c0-2.523 1.525-4.734 3.813-5.966L2.56 3.74a.5.5 0 0 1 .2-.678ZM5 10a1 1 0 1 0 0-2 1 1 0 0 0 0 2m6 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
+                            </svg>
+                        </button>
+                    </td>
+                    <td class="celda">
+                        <button id="b01"
+                        class="boton-celda two-mine" onclick="">
+                            <h2>
+                                2
+                            </h2>
+                        </button>
+                    </td>
+                    <td class="celda">
+                        <button id="b02"
+                        class="boton-celda one-mine" onclick="">
+                            <h2>
+                                1
+                            </h2>
+                        </button>
+                    </td>
+                    <td class="celda">
+                        <button id="b03"
+                        class="boton-celda one-mine" onclick="">
+                            <h2>
+                                1
+                            </h2>
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="celda">
+                        <button id="b10"
+                        class="boton-celda one-mine" onclick="">
+                            <h2>
+                                1
+                            </h2>
+                        </button>
+                    </td>
+                    <td class="celda">
+                        <button id="b11"
+                        class="boton-celda two-mine" onclick="">
+                            <h2>
+                                2
+                            </h2>
+                        </button>
+                    </td>
+                    <td class="celda">
+                        <button id="b12"
+                        class="boton-celda" onclick="" style="background: lightgray;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="red" viewBox="0 0 16 16">
+                            <path d="M2.76 3.061a.5.5 0 0 1 .679.2l1.283 2.352A8.9 8.9 0 0 1 8 5a8.9 8.9 0 0 1 3.278.613l1.283-2.352a.5.5 0 1 1 .878.478l-1.252 2.295C14.475 7.266 16 9.477 16 12H0c0-2.523 1.525-4.734 3.813-5.966L2.56 3.74a.5.5 0 0 1 .2-.678ZM5 10a1 1 0 1 0 0-2 1 1 0 0 0 0 2m6 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
+                            </svg>
+                        </button>
+                    </td>
+                    <td class="celda">
+                        <button id="b13"
+                        class="boton-celda two-mine" onclick="">
+                            <h2>
+                                2
+                            </h2>
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="celda">
+                        <button id="b21"
+                        class="boton-celda one-mine" onclick="">
+                            <h2>
+                                1
+                            </h2>
+                        </button>
+                    </td>
+                    <td class="celda">
+                        <button id="b20"
+                        class="boton-celda" onclick="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-flag-fill" viewBox="0 0 16 16">
+                            <path d="M14.778.085A.5.5 0 0 1 15 .5V8a.5.5 0 0 1-.314.464L14.5 8l.186.464-.003.001-.006.003-.023.009a12 12 0 0 1-.397.15c-.264.095-.631.223-1.047.35-.816.252-1.879.523-2.71.523-.847 0-1.548-.28-2.158-.525l-.028-.01C7.68 8.71 7.14 8.5 6.5 8.5c-.7 0-1.638.23-2.437.477A20 20 0 0 0 3 9.342V15.5a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 1 0v.282c.226-.079.496-.17.79-.26C4.606.272 5.67 0 6.5 0c.84 0 1.524.277 2.121.519l.043.018C9.286.788 9.828 1 10.5 1c.7 0 1.638-.23 2.437-.477a20 20 0 0 0 1.349-.476l.019-.007.004-.002h.001"/>
+                            </svg>
+                        </button>
+                    </td>
+                    <td class="celda">
+                        <button id="b22"
+                        class="boton-celda two-mine" onclick="">
+                            <h2>
+                                2
+                            </h2>
+                        </button>
+                    </td>
+                    <td class="celda">
+                        <button id="b23"
+                        class="boton-celda" onclick="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-flag-fill" viewBox="0 0 16 16">
+                            <path d="M14.778.085A.5.5 0 0 1 15 .5V8a.5.5 0 0 1-.314.464L14.5 8l.186.464-.003.001-.006.003-.023.009a12 12 0 0 1-.397.15c-.264.095-.631.223-1.047.35-.816.252-1.879.523-2.71.523-.847 0-1.548-.28-2.158-.525l-.028-.01C7.68 8.71 7.14 8.5 6.5 8.5c-.7 0-1.638.23-2.437.477A20 20 0 0 0 3 9.342V15.5a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 1 0v.282c.226-.079.496-.17.79-.26C4.606.272 5.67 0 6.5 0c.84 0 1.524.277 2.121.519l.043.018C9.286.788 9.828 1 10.5 1c.7 0 1.638-.23 2.437-.477a20 20 0 0 0 1.349-.476l.019-.007.004-.002h.001"/>
+                            </svg>
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="celda">
+                        <button id="b30"
+                        class="boton-celda" onclick="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-flag-fill" viewBox="0 0 16 16">
+                            <path d="M14.778.085A.5.5 0 0 1 15 .5V8a.5.5 0 0 1-.314.464L14.5 8l.186.464-.003.001-.006.003-.023.009a12 12 0 0 1-.397.15c-.264.095-.631.223-1.047.35-.816.252-1.879.523-2.71.523-.847 0-1.548-.28-2.158-.525l-.028-.01C7.68 8.71 7.14 8.5 6.5 8.5c-.7 0-1.638.23-2.437.477A20 20 0 0 0 3 9.342V15.5a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 1 0v.282c.226-.079.496-.17.79-.26C4.606.272 5.67 0 6.5 0c.84 0 1.524.277 2.121.519l.043.018C9.286.788 9.828 1 10.5 1c.7 0 1.638-.23 2.437-.477a20 20 0 0 0 1.349-.476l.019-.007.004-.002h.001"/>
+                            </svg>
+                        </button>
+                    </td>
+                    <td class="celda">
+                        <button id="b31"
+                        class="boton-celda one-mine" onclick="">
+                            <h2>
+                                1
+                            </h2>
+                        </button>
+                    </td>
+                    <td class="celda">
+                        <button id="b32"
+                        class="boton-celda two-mine" onclick="">
+                            <h2>
+                                2
+                            </h2>
+                        </button>
+                    </td>
+                    <td class="celda">
+                        <button id="b33"
+                        class="boton-celda" onclick="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-flag-fill" viewBox="0 0 16 16">
+                            <path d="M14.778.085A.5.5 0 0 1 15 .5V8a.5.5 0 0 1-.314.464L14.5 8l.186.464-.003.001-.006.003-.023.009a12 12 0 0 1-.397.15c-.264.095-.631.223-1.047.35-.816.252-1.879.523-2.71.523-.847 0-1.548-.28-2.158-.525l-.028-.01C7.68 8.71 7.14 8.5 6.5 8.5c-.7 0-1.638.23-2.437.477A20 20 0 0 0 3 9.342V15.5a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 1 0v.282c.226-.079.496-.17.79-.26C4.606.272 5.67 0 6.5 0c.84 0 1.524.277 2.121.519l.043.018C9.286.788 9.828 1 10.5 1c.7 0 1.638-.23 2.437-.477a20 20 0 0 0 1.349-.476l.019-.007.004-.002h.001"/>
+                            </svg>
+                        </button>
+                    </td>
+                </tr>
+            </table>
+        </main>
+        <br>
+        <footer>
+            <p>Copyright 2025. Todos los derechos reservados xd</p>
+        </footer>
+    </div>
+</body>
+</html>

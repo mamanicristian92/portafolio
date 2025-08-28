@@ -18,3 +18,48 @@ body{
   width: 30%;
   /* border: solid 1px; */
 }
+
+a:link {
+  color: cyan;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: violet;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: cornflowerblue;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+/* buscaminas */
+
+.celda{
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    text-align: center;
+}
+.boton-celda{
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    text-align: center;
+}
+.one-mine{
+    background: lightgreen;
+}
+.two-mine{
+    background: yellow;
+}
