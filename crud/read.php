@@ -16,18 +16,21 @@
                 <th>ID</th>
                 <th>Nombre</th>
                 <th>Descripción</th>
+                <th>Acciones</th>
             </tr>
         </thead>
         <tbody>
             <?php
-                $mysqli = new mysqli("localhost", "root", "", "portafolio");
+                require_once 'connect.php';
+                //$mysqli = new mysqli("localhost", "root", "", "portafolio");
                 $sql = "SELECT * FROM proyectos";
-                $result = $mysqli->query($sql);
+                $result = $con->query($sql);
                 if ($result->num_rows > 0) {
                     while($row = $result->fetch_assoc()) {
                         echo "<tr>";
                         echo "<td>" . $row["id"] . "</td>";
                         echo "<td>" . $row["name"] . "</td>";
+                        echo "<td>" . $row["description"] . "</td>";
                         echo "<td><a href='edit.php?id=" . $row["id"] . "'>Edit</a> | <a href='delete.php?id=" . $row["id"] . "'>Delete</a></td>";
                         echo "</tr>";
                     }
