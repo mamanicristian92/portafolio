@@ -48,15 +48,16 @@
                         $sql = "SELECT * FROM proyectos_tecnologias inner join tecnologias on proyectos_tecnologias.tecnologia_id=tecnologias.id WHERE proyecto_id = $id";
                         $result = $con->query($sql);
                         echo $result->num_rows;
+                        //echo $result;
                         if ($result->num_rows > 0) {
                             while($row = $result->fetch_assoc()) {
                                 
                                 echo "<tr>";
                                 echo $row;
                                 echo "<td>" . $row["id"] . "</td>";
-                                echo "<td>" . $row["tecnologia.name"] . "</td>";
-                                echo "<td>" . $row["tecnologia.description"] . "</td>";
-                                //echo "<td><a href='read.php?id=" . $row["id"] . "'>Edit</a> | <a href='edit.php?id=" . $row["id"] . "'>Edit</a> | <a href='delete.php?id=" . $row["id"] . "'>Delete</a></td>";
+                                echo "<td>" . $row["name"] . "</td>";
+                                echo "<td>" . $row["description"] . "</td>";
+                                //echo "<td><a href='read.php?id=" . $row["id"] . "'>Ver</a> | <a href='edit.php?id=" . $row["id"] . "'>Edit</a> | <a href='delete.php?id=" . $row["id"] . "'>Delete</a></td>";
                                 echo "</tr>";
                             }
                         } else {
