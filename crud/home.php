@@ -9,6 +9,38 @@
 <body>
     <?php
     require_once 'header.php';
+    ?>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Descripción</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <?php
+                require_once 'connect.php';
+                $sql = "SELECT * FROM proyectos";
+                $result = $con->query($sql);
+                if ($result->num_rows > 0) {
+                    while($row = $result->fetch_assoc()) {
+                        echo "<tr>";
+                        echo "<td>" . $row["id"] . "</td>";
+                        echo "<td>" . $row["name"] . "</td>";
+                        echo "<td>" . $row["description"] . "</td>";
+                        echo "<td><a href='read.php?id=" . $row["id"] . "'>Ver</a> | <a href='edit.php?id=" . $row["id"] . "'>Edit</a> | <a href='delete.php?id=" . $row["id"] . "'>Delete</a></td>";
+                        echo "</tr>";
+                    }
+                } else {
+                    echo "<tr><td colspan='3'>No records found</td></tr>";
+                }
+                $conn->close();
+            ?>
+        </tbody>
+    </table>
+    <?php
     require_once 'footer.php'
     ?>
     

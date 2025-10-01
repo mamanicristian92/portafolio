@@ -8,7 +8,7 @@
 </head>
 <body>
     <h3>Read</h3>
-    <a href="create.php">Create</a>
+    <a href="create_proyect.php">Create</a>
     <h3>Proyectos</h3>
     <table border="1">
         <thead>
@@ -16,6 +16,7 @@
                 <th>ID</th>
                 <th>Nombre</th>
                 <th>Descripción</th>
+                <th>Estado</th>
                 <th>Acciones</th>
             </tr>
         </thead>
@@ -30,6 +31,12 @@
                         echo "<td>" . $row["id"] . "</td>";
                         echo "<td>" . $row["name"] . "</td>";
                         echo "<td>" . $row["description"] . "</td>";
+                        if ($row["state"] == 1) {
+                            $row["state"] = "Activo";
+                        } else {
+                            $row["state"] = "Inactivo";
+                        }
+                        echo "<td>" . $row["state"] . "</td>";
                         echo "<td><a href='read.php?id=" . $row["id"] . "'>Ver</a> | <a href='edit.php?id=" . $row["id"] . "'>Edit</a> | <a href='delete.php?id=" . $row["id"] . "'>Delete</a></td>";
                         echo "</tr>";
                     }

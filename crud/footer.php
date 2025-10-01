@@ -1,4 +1,4 @@
 <hr>
 <div class="container">
- &copy; WEB
+ &copy; Portafolio de Cristian
 </div>
